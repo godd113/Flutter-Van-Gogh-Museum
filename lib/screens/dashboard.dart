@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:flutter_vangogh_museum/widgets/build_gradient.dart';
+import 'package:flutter_vangogh_museum/widgets/card_screens.dart';
 
 class MyDashboard extends StatefulWidget {
   const MyDashboard({super.key});
@@ -23,22 +23,28 @@ class _MyDashboardState extends State<MyDashboard> {
                   image: AssetImage('assets/imgs/artworks/vangogh.jpeg'),
                   fit: BoxFit.fitHeight)),
         ),
+        ViewGradient(
+          opacity: 0.8,
+        ),
         Container(
-          padding: const EdgeInsets.only(left: 10, top: 40),
+          padding: const EdgeInsets.only(left: 10, top: 40, right: 10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const DefaultTextStyle(
-                  style: TextStyle(color: Colors.white, fontSize: 50),
-                  child: Text(
-                    'Vincent van Gogh',
-                    textAlign: TextAlign.left,
-                  )),
-              Container(
-                padding: const EdgeInsets.only(top: 10),
-                child: const DefaultTextStyle(
-                    style: TextStyle(color: Colors.white, fontSize: 38),
-                    child: Text('Museum')),
+            children: const [
+              Expanded(
+                flex: 3,
+                child: DefaultTextStyle(
+                    style: TextStyle(color: Colors.white, fontSize: 50),
+                    child: Text(
+                      'Vincent van Gogh \nMuseum',
+                      textAlign: TextAlign.left,
+                    )),
+              ),
+              Expanded(
+                flex: 2,
+                child: SizedBox(
+                  child: CardScreens(),
+                ),
               )
             ],
           ),
