@@ -1,0 +1,32 @@
+[
+	{
+		"title": "The Starry night",
+		"subTitle": "Year 1889",
+		"detail": "The Starry Night is an oil-on-canvas painting by the Dutch Post-Impressionist painter Vincent van Gogh. Painted in June 1889, it depicts the view from the east-facing window of his asylum room at Saint-Rémy-de-Provence, just before sunrise, with the addition of an imaginary village",
+        "imagePath":"assets/imgs/artworks/the-starry-night.jpeg"
+    },
+    {
+		"title": "The Night cafe",
+		"subTitle": "Year 1888",
+		"detail": "The painting was executed on industrial primed canvas of size 30 (French standard). It depicts the interior of the cafe, with a half-curtained doorway in the center background leading, presumably, to more private quarters. Five customers sit at tables along the walls to the left and right, with Ginoux, the landlord said to be depicted (standing) in it, to one side of a billiard table near the center of the room, facing the viewer.\nThe five customers depicted in the scene have been described as three drunks and derelicts in a large public room huddled down in sleep or stupor. One scholar wrote, The cafe was an all-night haunt of local down-and-outs and prostitutes, who are depicted slouched at tables and drinking together at the far end of the room. \nIn wildly contrasting, vivid colours, the ceiling is green, the upper walls red, the glowing, gas ceiling lamps and floor largely yellow. The paint is applied thickly, with many of the lines of the room leading toward the door in the back. The perspective looks somewhat downward toward the floor.",
+        "imagePath":"assets/imgs/artworks/the_night_cafe.jpeg"
+	},
+    {
+		"title": "The Potato Eater",
+		"subTitle": "Year 1885–1885",
+		"detail": "The Potato Eaters is an oil painting by Dutch artist Vincent van Gogh painted in April 1885 in Nuenen, Netherlands. It is in the Van Gogh Museum in Amsterdam.",
+        "imagePath":"assets/imgs/artworks/the_potato_eater.png"
+	},
+    {
+		"title": "Starry night over the rhone",
+		"subTitle": "Year 1888",
+		"detail": "Starry Night, commonly known as Starry Night Over the Rhône, is one of Vincent van Gogh's paintings of Arles at night. It was painted on the bank of the Rhône that was only a one or two-minute walk from the Yellow House on the Place Lamartine, which Van Gogh was renting at the time.",
+        "imagePath":"assets/imgs/artworks/starry_night_over_the_rhone.jpeg"
+	},
+    {
+		"title": "Café Terrace at Night",
+		"subTitle": "Year 1888",
+		"detail": "Café Terrace at Night is an 1888 oil painting by the Dutch artist Vincent van Gogh. It is also known as The Cafe Terrace on the Place du Forum, and, when first exhibited in 1891, was entitled Coffeehouse, in the evening. Van Gogh painted Café Terrace at Night in Arles, France, in mid-September 1888.",
+        "imagePath":"assets/imgs/artworks/cafe_terrace_place_du_forum.jpeg"
+	}
+]

@@ -1,4 +1,7 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_vangogh_museum/models/model_artwork.dart';
 import 'package:flutter_vangogh_museum/widgets/card_view.dart';
 
@@ -12,7 +15,7 @@ class CardScreens extends StatefulWidget {
 class _CardScreensState extends State<CardScreens> {
   late PageController _pageController;
   List<ModelArtWork> gallary = [
-    ModelArtWork(
+    /*ModelArtWork(
         'The Starry night',
         'Year 1889',
         'The Starry Night is an oil-on-canvas painting by the Dutch Post-Impressionist painter Vincent van Gogh. Painted in June 1889, it depicts the view from the east-facing window of his asylum room at Saint-Rémy-de-Provence, just before sunrise, with the addition of an imaginary village',
@@ -26,12 +29,13 @@ class _CardScreensState extends State<CardScreens> {
         'The Potato Eater',
         'Year 1885–1885',
         'The Potato Eaters is an oil painting by Dutch artist Vincent van Gogh painted in April 1885 in Nuenen, Netherlands. It is in the Van Gogh Museum in Amsterdam.',
-        'assets/imgs/artworks/the_potato_eater.png')
+        'assets/imgs/artworks/the_potato_eater.png')*/
   ];
   @override
   void initState() {
     // TODO: implement initState
     _pageController = PageController(viewportFraction: 0.687);
+    readJson();
     super.initState();
   }
 
@@ -40,6 +44,17 @@ class _CardScreensState extends State<CardScreens> {
     // TODO: implement dispose
     _pageController.dispose();
     super.dispose();
+  }
+
+  Future<void> readJson() async {
+    final String response =
+        await rootBundle.loadString('assets/jsons/artworks.json');
+    final data = await json.decode(response);
+    setState(() {
+      for (var mapData in data) {
+        gallary.add(ModelArtWork.fromJson(mapData));
+      }
+    });
   }
 
   @override

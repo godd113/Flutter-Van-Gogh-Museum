@@ -59,6 +59,7 @@ flutter:
   uses-material-design: true
   assets:
    - assets/imgs/artworks/
+   - assets/jsons/
 
   #   - images/a_dot_ham.jpeg
 
