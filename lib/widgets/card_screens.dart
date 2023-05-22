@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_vangogh_museum/models/model_artwork.dart';
+import 'package:flutter_vangogh_museum/screens/artwork_detail.dart';
 import 'package:flutter_vangogh_museum/widgets/card_view.dart';
 
 class CardScreens extends StatefulWidget {
@@ -71,7 +72,17 @@ class _CardScreensState extends State<CardScreens> {
                   controller: _pageController,
                   itemCount: gallary.length,
                   itemBuilder: ((context, index) {
-                    return CardView(oArtWork: gallary[index]);
+                    return GestureDetector(
+                      child: CardView(oArtWork: gallary[index]),
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => ArtWorkDetail(
+                                      oArtWork: gallary[index],
+                                    )));
+                      },
+                    );
                   })),
             ),
           ),
