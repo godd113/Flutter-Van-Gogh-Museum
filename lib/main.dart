@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_vangogh_museum/screens/dashboard.dart';
+import 'package:flutter_vangogh_museum/widgets/card_screens.dart';
 
 void main() {
   runApp(const MyApp());
