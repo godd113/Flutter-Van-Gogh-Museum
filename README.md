@@ -1,16 +1,38 @@
 # flutter_vangogh_museum
 
-A new Flutter project.
+## About this app
+This app is a mini gallery showcasing and explaining the famous artworks of Van Gogh.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. Download or Clone project 
+2. Open project with VS Code or Android Studio
+3. Open terminal VS Code and input command ```flutter pub get```
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshot
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<table>
+    <tr>
+    <td>
+    <img
+  src="/assets/previews/1.png"
+  alt="Alt text"
+  title="Main_page"
+  style="display: inline-block; margin: 0 auto; width: 250px">
+  </td>
+    <td>
+    <img
+  src="/assets/previews/2.png"
+  alt="Alt text"
+  title="Detail_page"
+  style="display: inline-block; margin: 0 auto; width: 250px">
+    </td>
+    <td>
+    <img
+  src="/assets/previews/3.png"
+  alt="Alt text"
+  title="Detail_page2"
+  style="display: inline-block; margin: 0 auto; width: 250px">
+    </td>
+    </tr>
+</table>
