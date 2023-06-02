@@ -36,7 +36,9 @@ class _SearchViewState extends State<SearchView> {
     });
   }
 
-  Future<void> clickBack() async {}
+  Future<void> clickBack() async {
+    Navigator.pop(context);
+  }
 
   Future<void> searchArtWork(String enterKeyword) async {
     List<ModelArtWork> result = [];
@@ -74,9 +76,7 @@ class _SearchViewState extends State<SearchView> {
                         color: Colors.white,
                       ),
                     ),
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
+                    onTap: () => clickBack(),
                   )),
             ),
             Container(
@@ -89,7 +89,6 @@ class _SearchViewState extends State<SearchView> {
                 autocorrect: true,
               ),
             ),
-            Expanded(flex: 2, child: Container())
           ]),
         ),
         Flexible(
