@@ -29,9 +29,25 @@ This app is a mini gallery showcasing and explaining the famous artworks of Van 
     </td>
     <td>
     <img
-  src="/assets/previews/3.png"
+  src="/assets/previews/4.png"
   alt="Alt text"
   title="Detail_page2"
+  style="display: inline-block; margin: 0 auto; width: 250px">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <img
+  src="/assets/previews/3.png"
+  alt="Alt text"
+  title="Main_page"
+  style="display: inline-block; margin: 0 auto; width: 250px">
+  </td>
+    <td>
+    <img
+  src="/assets/previews/5.png"
+  alt="Alt text"
+  title="Detail_page"
   style="display: inline-block; margin: 0 auto; width: 250px">
     </td>
     </tr>
