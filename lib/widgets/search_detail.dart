@@ -7,14 +7,20 @@ class SearchDetail extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       child: Column(children: [
         Row(
           children: [
             Container(
-              padding: const EdgeInsets.only(right: 10),
-              width: 80,
-              child: Image.asset(oArtWork.imagePath),
+              margin: const EdgeInsets.only(right: 10),
+              width: 70,
+              height: 60,
+              child: Positioned.fill(
+                  //- ทำให้ element ที่อยู่ใน tag นี้เต็มพื้นที่
+                  child: Image.asset(
+                oArtWork.imagePath,
+                fit: BoxFit.cover,
+              )),
             ),
             Text(
               oArtWork.title,
