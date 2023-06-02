@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_vangogh_museum/models/model_artwork.dart';
 import 'package:flutter_vangogh_museum/widgets/build_gradient.dart';
+import 'package:flutter_vangogh_museum/widgets/show_imagefull.dart';
 
 class ArtWorkDetail extends StatelessWidget {
   ModelArtWork oArtWork;
@@ -18,17 +19,31 @@ class ArtWorkDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+
+    Future<void> clickFullScreenImage() async {
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => ShowImageFullScreen(
+                    imagePath: oArtWork.imagePath,
+                  ),
+              fullscreenDialog: true));
+    }
+
     return Scaffold(
       backgroundColor: Colors.black,
       body: Stack(children: [
-        SizedBox(
-            height: (size.height / 2),
-            child: Stack(children: [
-              _buildimageView(),
-              ViewGradient(
-                opacity: 0.6,
-              ),
-            ])),
+        GestureDetector(
+          onTap: () => clickFullScreenImage(),
+          child: SizedBox(
+              height: (size.height / 2),
+              child: Stack(children: [
+                _buildimageView(),
+                ViewGradient(
+                  opacity: 0.6,
+                ),
+              ])),
+        ),
         Container(
           padding: const EdgeInsets.only(top: 65, left: 15),
           child: Align(
@@ -66,7 +81,7 @@ class ArtWorkDetail extends StatelessWidget {
                             height: 5,
                             width: 32 * 1.5,
                             decoration: BoxDecoration(
-                                gradient: RadialGradient(
+                                gradient: const RadialGradient(
                                     colors: [Colors.white, Colors.white]),
                                 borderRadius: BorderRadius.circular(3)),
                           ),
@@ -109,82 +124,4 @@ class ArtWorkDetail extends StatelessWidget {
       ]),
     );
   }
-
-  /*@override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.black,
-      body: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: SizedBox(
-          height: MediaQuery.of(context).size.height,
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Expanded(
-                  flex: 2,
-                  child: Container(
-                    decoration: const BoxDecoration(color: Colors.black),
-                    child: Stack(
-                      children: [
-                        _buildimageView(),
-                        ViewGradient(
-                          opacity: 0.5,
-                        ),
-                        Container(
-                          padding: const EdgeInsets.only(top: 65, left: 15),
-                          child: Align(
-                              alignment: Alignment.topLeft,
-                              child: GestureDetector(
-                                child: const Icon(
-                                  Icons.arrow_back_ios,
-                                  color: Colors.white,
-                                ),
-                                onTap: () {
-                                  Navigator.pop(context);
-                                },
-                              )),
-                        ),
-                      ],
-                    ),
-                  )),
-              Expanded(
-                  flex: 3,
-                  child: Container(
-                    decoration: const BoxDecoration(color: Colors.black),
-                    child: Column(children: [
-                      Container(
-                        width: MediaQuery.of(context).size.width,
-                        padding: const EdgeInsets.only(top: 20, left: 10),
-                        child: Text(
-                          oArtWork.title,
-                          style: const TextStyle(
-                              color: Colors.white, fontSize: 19),
-                        ),
-                      ),
-                      Container(
-                        width: MediaQuery.of(context).size.width,
-                        padding: const EdgeInsets.only(top: 2, left: 10),
-                        child: Text(
-                          oArtWork.subTitle,
-                          style: const TextStyle(
-                              color: Colors.blueGrey, fontSize: 15),
-                        ),
-                      ),
-                      Container(
-                        width: MediaQuery.of(context).size.width,
-                        padding: const EdgeInsets.only(top: 20, left: 10),
-                        child: Text(
-                          oArtWork.detail,
-                          style:
-                              const TextStyle(color: Colors.grey, fontSize: 17),
-                        ),
-                      )
-                    ]),
-                  ))
-            ],
-          ),
-        ),
-      ),
-    );}*/
 }

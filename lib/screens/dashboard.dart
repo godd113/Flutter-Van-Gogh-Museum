@@ -14,7 +14,6 @@ class _MyDashboardState extends State<MyDashboard> {
   Future<void> clickSearch() async {
     Navigator.push(
         context, MaterialPageRoute(builder: (context) => const SearchView()));
-    print("Search");
   }
 
   @override
