@@ -1,13 +1,13 @@
 [
 	{
 		"title": "The Starry night",
-		"subTitle": "Year 1889",
+		"subTitle": "in 1889",
 		"detail": "The Starry Night is an oil-on-canvas painting by the Dutch Post-Impressionist painter Vincent van Gogh. Painted in June 1889, it depicts the view from the east-facing window of his asylum room at Saint-Rémy-de-Provence, just before sunrise, with the addition of an imaginary village",
         "imagePath":"assets/imgs/artworks/the-starry-night.jpeg"
     },
     {
 		"title": "The Night cafe",
-		"subTitle": "Year 1888",
+		"subTitle": "in 1888",
 		"detail": "The painting was executed on industrial primed canvas of size 30 (French standard). It depicts the interior of the cafe, with a half-curtained doorway in the center background leading, presumably, to more private quarters. Five customers sit at tables along the walls to the left and right, with Ginoux, the landlord said to be depicted (standing) in it, to one side of a billiard table near the center of the room, facing the viewer.\nThe five customers depicted in the scene have been described as three drunks and derelicts in a large public room huddled down in sleep or stupor. One scholar wrote, The cafe was an all-night haunt of local down-and-outs and prostitutes, who are depicted slouched at tables and drinking together at the far end of the room. \nIn wildly contrasting, vivid colours, the ceiling is green, the upper walls red, the glowing, gas ceiling lamps and floor largely yellow. The paint is applied thickly, with many of the lines of the room leading toward the door in the back. The perspective looks somewhat downward toward the floor.",
         "imagePath":"assets/imgs/artworks/the_night_cafe.jpeg"
 	},
@@ -19,14 +19,26 @@
 	},
     {
 		"title": "Starry night over the rhone",
-		"subTitle": "Year 1888",
+		"subTitle": "in 1888",
 		"detail": "Starry Night, commonly known as Starry Night Over the Rhône, is one of Vincent van Gogh's paintings of Arles at night. It was painted on the bank of the Rhône that was only a one or two-minute walk from the Yellow House on the Place Lamartine, which Van Gogh was renting at the time.",
         "imagePath":"assets/imgs/artworks/starry_night_over_the_rhone.jpeg"
 	},
     {
 		"title": "Café Terrace at Night",
-		"subTitle": "Year 1888",
+		"subTitle": "in 1888",
 		"detail": "Café Terrace at Night is an 1888 oil painting by the Dutch artist Vincent van Gogh. It is also known as The Cafe Terrace on the Place du Forum, and, when first exhibited in 1891, was entitled Coffeehouse, in the evening. Van Gogh painted Café Terrace at Night in Arles, France, in mid-September 1888.",
         "imagePath":"assets/imgs/artworks/cafe_terrace_place_du_forum.jpeg"
+	},
+	{
+		"title": "Vase With Carnations",
+		"subTitle": "in 1980",
+		"detail": "Vincent van Gogh was the son of a minister and a preacher himself for a while. After he was dismissed in 1880 from his position as preacher in the poor mine region of Borinage in Belgium, he chose the life of an artist. Until 1886 Van Gogh wandered round the Netherlands. His paintings from this period are dark in tone and examples of the difficult life of a peasant. In 1886, Van Gogh left for Paris where his brother Theo had a gallery. He got to know artists such as Toulouse-Lautrec, Seurat and Gauguin, and these had considerable influence on his work. His colour palette became lighter and he experimented with an impressionistic style of painting. In 1888, Van Gogh settled in Arles; his friend Gauguin would later follow him there. Here, Van Gogh's mental health deteriorated, which led, among other things, to the famous incident when he cut off a piece of his ear. He left around 1250 paintings and 1000 water colours, sketches and drawings, and also an extensive correspondence with his brother Theo.",
+		"imagePath": "assets/imgs/artworks/vase_with_carnations.jpeg"
+	},
+	{
+		"title": "Poplars Near Nuenen",
+		"subTitle": "in 1885",
+		"detail": "This Van Gogh painting was the first of the artist's paintings to enter a public collection in 1903. He entitled it 'Symphony in yellow'. It marks the transition from his dark Dutch oeuvre to his lighter expressionistic French work. He took it with him to Paris, where he added the lighter dabs., Van Gogh attached a small drawing of this painting to a letter to his brother Theo, to show him what he had made. Based on this, the painting has been dated October 1884. At the same time there are indications that the painting was reworked two years later, in 1886, with brighter colours. In that year, Van Gogh was in Paris and, under the influence of the impressionists, he started working with lighter colours. /n It is not easy to determine which strokes of paint were made in the Netherlands and which were added in France. The blue stripes which stand out against the sky and the light touches in the trees seem to have been added in France. These are brighter than the colours he used in his Dutch period. The way in which the ground is painted, built up of isolated strokes of paint, also seems to acknowledge an impressionistic influence. Van Gogh left the signature at bottom left, which already appeared on the painting, when he did the repainting. The Dutch paint can still be seen there. /n Source: Annet Tellegen, 'De populierenlaan bij Nuenen van Vincent van Gogh', Bulletin Museum Boymans-van Beuningen, Rotterdam 1967, pp. 8-15. /n X-ray photos have shown that Van Gogh had initially used this canvas for a completely different painting. The contours of a church tower and a landscape can be seen. Perhaps he was dissatisfied with this composition and therefore used the same canvas for a different painting. Or could he not afford a new canvas and sacrificed an old work in order to be able to create a new one?",
+		"imagePath": "assets/imgs/artworks/poplars_near_nuenen.jpg"
 	}
 ]
